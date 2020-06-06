@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <math.h>
+
+typedef struct 
+{
+float x;
+float y;
+} ponto;
+ 
+ponto a,b;
+ 
+
+float distancia( ponto a, ponto b )
+{
+float d, A, B;
+
+A = pow((b.x - a.x),2);
+B = pow((b.y - a.y),2);
+d  = sqrt( A + B );
+
+return (d);
+}
+
+
+int main() {
+
+float dist; 
+ponto A,B;
+
+printf(" Por favor, digite os valores de x e y para o ponto A \n");
+scanf("%f %f", &A.x , &A.y );
+
+printf(" Por favor, digite os valores de x e y para o ponto B \n");
+scanf("%f %f", &B.x , &B.y );
+
+dist = distancia( A, B);
+
+printf(" %.2f ",dist);
+
+}
